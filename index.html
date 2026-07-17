@@ -21,10 +21,10 @@ async function login() {
   try {
     document.getElementById("status").innerText = "Connecting...";
 
-    await Pi.init({
-      version: "2.0",
-      sandbox: true
-    });
+    Pi.init({
+  version: "2.0",
+  sandbox: true
+});
 
     const auth = await Pi.authenticate(["username"]);
 
